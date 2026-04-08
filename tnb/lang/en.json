@@ -8,7 +8,7 @@
         "technology": "Technology",
         "branches": "Branches",
         "contact": "Contact Us",
-        "quotation": "Request a Quote",
+        "quotation": "Request Quotation",
         "login": "Login"
     },
     "nav_services": {
@@ -21,8 +21,9 @@
     },
     "nav_about": {
         "company": "TNB Company",
-        "expertise": "Expertise",
-        "vision": "Vision"
+        "expertise": "Our Expertise",
+        "vision": "Our Vision",
+        "safety": "Safety Standards"
     },
     "footer": {
         "desc": "Smart, Fast, and Sustainable Solutions for logistics businesses in Thailand",
@@ -132,6 +133,10 @@
         "bangkadi_desc": "Specialized in Shuttle truck services between warehouses and container management.",
         "latkrabang_name": "Lat Krabang Branch",
         "latkrabang_desc": "Distribution center with a 9,000 sqm truck yard, strategically located near ICD for fast logistics (click to view address)."
+    },
+    "safety": {
+        "title": "Safety Standards",
+        "subtitle": "Safety standards and international operating standards"
     },
     "trucktypes": {
         "title": "Truck Types",

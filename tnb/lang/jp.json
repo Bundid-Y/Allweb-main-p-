@@ -4,9 +4,9 @@
         "services": "サービス",
         "about": "会社概要",
         "partners": "パートナー",
-        "trucktypes": "車両タイプ",
+        "trucktypes": "トラックの種類",
         "technology": "テクノロジー",
-        "branches": "拠点",
+        "branches": "支店",
         "contact": "お問い合わせ",
         "quotation": "見積もり依頼",
         "login": "ログイン"
@@ -20,9 +20,10 @@
         "parking": "トラック駐車場・ヤード管理"
     },
     "nav_about": {
-        "company": "TNB会社紹介",
-        "expertise": "専門性",
-        "vision": "ビジョン"
+        "company": "TNB会社",
+        "expertise": "専門知識",
+        "vision": "ビジョン",
+        "safety": "安全基準"
     },
     "footer": {
         "desc": "タイのロジスティクス業界に向けたスマート・迅速・持続可能なソリューション",
@@ -132,6 +133,10 @@
         "bangkadi_desc": "倉庫間シャトルトラックサービスとコンテナ管理を専門 (住所を表示するにはクリック)。",
         "latkrabang_name": "ラートクラバン支店",
         "latkrabang_desc": "9,000平方メートルのトラックヤードを備えた配送センター、ICDに近接し迅速な物流を実現 (住所を表示するにはクリック)。"
+    },
+    "safety": {
+        "title": "安全基準",
+        "subtitle": "安全基準と国際的な運用基準"
     },
     "trucktypes": {
         "title": "トラックの種類",

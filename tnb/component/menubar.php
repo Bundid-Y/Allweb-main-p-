@@ -40,6 +40,8 @@
                                     data-i18n="nav_about.expertise">ความเชี่ยวชาญ</a></li>
                             <li><a href="../about/vision.php" class="dropdown-link"
                                     data-i18n="nav_about.vision">วิสัยทัศน์</a></li>
+                            <li><a href="../main/safety.php" class="dropdown-link"
+                                    data-i18n="nav_about.safety">มาตรฐานความปลอดภัย</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a href="../main/partners.php" class="nav-link"

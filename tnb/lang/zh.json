@@ -4,7 +4,7 @@
         "services": "我们的服务",
         "about": "关于我们",
         "partners": "合作伙伴",
-        "trucktypes": "车辆类型",
+        "trucktypes": "卡车类型",
         "technology": "技术",
         "branches": "分支机构",
         "contact": "联系我们",
@@ -21,8 +21,9 @@
     },
     "nav_about": {
         "company": "TNB公司",
-        "expertise": "专业能力",
-        "vision": "愿景"
+        "expertise": "我们的专长",
+        "vision": "我们的愿景",
+        "safety": "安全标准"
     },
     "footer": {
         "desc": "为泰国物流企业提供智能、快速、可持续的解决方案",
@@ -132,6 +133,10 @@
         "bangkadi_desc": "专业提供仓库间穿梭卡车服务和集装箱管理。",
         "latkrabang_name": "叻甲邦分支",
         "latkrabang_desc": "配送中心，拥有9,000平方米停车场，战略性靠近ICD以实现快速物流 (点击查看地址)。"
+    },
+    "safety": {
+        "title": "安全标准",
+        "subtitle": "安全标准和国际运营标准"
     },
     "trucktypes": {
         "title": "卡车类型",
