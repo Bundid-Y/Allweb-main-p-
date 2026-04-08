@@ -9803,3 +9803,369 @@ body.page-trucktypes .truck-card__body {
     border-radius: 12px;
   }
 }
+
+/* =========================================
+   Safety Page — Scoped Card Layout
+   Prefix: .page-safety
+   ========================================= */
+
+/* Shared blue gradient header — ใช้กับทุกหน้าที่มี class card-ui-header */
+.page-safety .card-ui-header,
+.page-trucktypes .card-ui-header,
+.page-branches .card-ui-header,
+.page-contact .card-ui-header,
+.page-technology .card-ui-header {
+  background: linear-gradient(135deg, #0a1e4a 0%, #0d2d6b 40%, #1e3a8a 100%);
+  color: white;
+  position: relative;
+  padding: 80px 0 60px;
+  overflow: hidden;
+}
+
+/* Center text for safety page header */
+.page-safety .card-ui-header {
+  text-align: center;
+}
+
+/* Decorative radial glow — เหมือน technology.php */
+.page-safety .card-ui-header::before,
+.page-trucktypes .card-ui-header::before,
+.page-branches .card-ui-header::before,
+.page-contact .card-ui-header::before,
+.page-technology .card-ui-header::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* หัวข้อหลัก — ขนาดเท่ากับ index.php */
+.page-safety .card-ui-main-title,
+.page-trucktypes .card-ui-main-title,
+.page-branches .card-ui-main-title,
+.page-contact .card-ui-main-title,
+.page-technology .card-ui-main-title {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+  font-family: 'Sarabun', sans-serif;
+}
+
+/* คำอธิบายใต้หัวข้อ — ขนาดเท่ากับ index.php */
+.page-safety .card-ui-subtitle,
+.page-trucktypes .card-ui-main-desc,
+.page-branches .card-ui-main-desc,
+.page-contact .card-ui-main-desc,
+.page-technology .card-ui-main-desc {
+  font-size: 18px;
+  max-width: 800px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+  font-family: 'Sarabun', sans-serif;
+}
+
+/* Center subtitle for safety page */
+.page-safety .card-ui-subtitle {
+  margin: 0 auto;
+}
+
+/* Safety Section */
+.page-safety .safety-section {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+}
+
+/* Safety Row - Text Left, Image Right Layout */
+.page-safety .safety-row {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 6rem;
+}
+
+.page-safety .safety-row:last-child {
+  margin-bottom: 0;
+}
+
+/* Safety Image */
+.page-safety .safety-image {
+  flex: 0 0 50%;
+  position: relative;
+}
+
+.page-safety .safety-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(13, 45, 107, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.page-safety .safety-image:hover img {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(13, 45, 107, 0.18);
+}
+
+/* Safety Content */
+.page-safety .safety-content {
+  flex: 0 0 50%;
+}
+
+/* Safety Icon */
+.page-safety .safety-icon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #0d2d6b, #2563eb);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: white;
+  box-shadow: 0 4px 16px rgba(13, 45, 107, 0.2);
+}
+
+/* Safety Title */
+.page-safety .safety-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0d2d6b;
+  margin-bottom: 1.5rem;
+  font-family: 'Sarabun', sans-serif;
+  line-height: 1.4;
+}
+
+/* Safety List */
+.page-safety .safety-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-safety .safety-list li {
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  color: #475569;
+  line-height: 1.7;
+  font-family: 'Sarabun', sans-serif;
+}
+
+.page-safety .safety-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(135deg, #0d2d6b, #2563eb);
+  border-radius: 50%;
+}
+
+/* PPE Section */
+.page-safety .ppe-section {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #0d2d6b 0%, #1e3a8a 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-safety .ppe-section::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.page-safety .ppe-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.page-safety .ppe-icon {
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.page-safety .ppe-title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  font-family: 'Sarabun', sans-serif;
+}
+
+.page-safety .ppe-description {
+  font-size: 18px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Sarabun', sans-serif;
+}
+
+/* Responsive for Safety Page */
+@media (max-width: 992px) {
+  .page-safety .safety-row {
+    gap: 3rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-safety .card-ui-header {
+    padding: 60px 0 35px;
+  }
+
+  .page-safety .card-ui-main-title {
+    font-size: 28px;
+  }
+
+  .page-safety .card-ui-subtitle {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .page-safety .safety-section {
+    padding: 50px 0;
+  }
+
+  .page-safety .safety-row {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .page-safety .safety-image,
+  .page-safety .safety-content {
+    flex: 0 0 100%;
+  }
+
+  .page-safety .safety-icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .page-safety .safety-title {
+    font-size: 20px;
+  }
+
+  .page-safety .safety-list li {
+    font-size: 15px;
+    padding-left: 2rem;
+  }
+
+  .page-safety .ppe-section {
+    padding: 60px 0;
+  }
+
+  .page-safety .ppe-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .page-safety .ppe-title {
+    font-size: 24px;
+  }
+
+  .page-safety .ppe-description {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-safety .safety-row {
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .page-safety .safety-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .page-safety .safety-title {
+    font-size: 18px;
+  }
+
+  .page-safety .safety-list li {
+    font-size: 14px;
+    padding-left: 1.8rem;
+  }
+
+  .page-safety .ppe-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .page-safety .ppe-title {
+    font-size: 20px;
+  }
+
+  .page-safety .ppe-description {
+    font-size: 15px;
+  }
+}
+
+/* Safety page - Image height to match text content */
+.page-safety .expertise-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  z-index: 1;
+  border-radius: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.page-safety .expertise-image-wrap::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  width: calc(100% - 15px);
+  height: calc(100% - 15px);
+  background-color: #0d2d6b;
+  z-index: -1;
+  border-radius: 0;
+  transform: rotate(2deg);
+  transform-origin: bottom right;
+  opacity: 0.9;
+  box-shadow: 0 5px 15px rgba(13, 45, 107, 0.15);
+}
+
+.page-safety .expertise-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
