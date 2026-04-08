@@ -36,50 +36,6 @@
     
     <!-- Load i18n first, then other scripts -->
     <script src="../js/i18n.js"></script>
-    <script>
-        // Force immediate i18n initialization
-        console.log('=== Force i18n Initialization ===');
-        
-        // Wait for i18n to be available, then initialize
-        var initInterval = setInterval(function() {
-            if (window.tnbLang && !window.tnbLang._initialized) {
-                console.log('Found tnbLang, forcing initialization...');
-                
-                // Force initialization
-                window.tnbLang.setLang('th').then(function() {
-                    console.log('i18n initialized successfully');
-                    clearInterval(initInterval);
-                    
-                    // Apply translations immediately
-                    setTimeout(function() {
-                        console.log('Applying translations...');
-                        var elements = document.querySelectorAll('[data-i18n]');
-                        elements.forEach(function(el) {
-                            var key = el.getAttribute('data-i18n');
-                            var translation = window.tnbLang.resolve(key);
-                            if (translation) {
-                                el.textContent = translation;
-                                console.log('Applied translation:', key, '=', translation);
-                            }
-                        });
-                    }, 100);
-                    
-                }).catch(function(error) {
-                    console.error('i18n initialization failed:', error);
-                    clearInterval(initInterval);
-                });
-            } else if (window.tnbLang && window.tnbLang._initialized) {
-                console.log('i18n already initialized');
-                clearInterval(initInterval);
-            }
-        }, 100);
-        
-        // Timeout after 10 seconds
-        setTimeout(function() {
-            clearInterval(initInterval);
-            console.error('i18n initialization timeout');
-        }, 10000);
-    </script>
     <script src="../js/script.js?v=<?php echo time(); ?>"></script>
 </head>
 
@@ -114,7 +70,7 @@
             <!-- ส่วนการ์ดสาขา -->
             <div class="branches-cards-section">
 
-                <div class="branch-card">
+                <div class="branch-card" data-branch="bangsaen">
                     <h3 class="branch-card__name" data-i18n="branches.bangsaen_name">สาขาบางแสน (สำนักงานใหญ่)</h3>
                     <p class="branch-card__desc" data-i18n="branches.bangsaen_desc">ศูนย์กลางการบริหารจัดการการขนส่งภายในประเทศ เป็นสำนักงานใหญ่ที่รวมศูนย์บัญชาการและประสานงานทุกสาขา (กดเพื่อดูที่อยู่)</p>
                     <ul class="branch-card__services">
@@ -124,7 +80,7 @@
                     </ul>
                 </div>
 
-                <div class="branch-card">
+                <div class="branch-card" data-branch="laemchabang">
                     <h3 class="branch-card__name" data-i18n="branches.laemchabang_name">สาขาแหลมฉบัง</h3>
                     <p class="branch-card__desc" data-i18n="branches.laemchabang_desc">ให้บริการจัดจองตู้คอนเทนเนอร์และพื้นที่ฝากวางตู้ (Container Drop Yard) เชื่อมต่อท่าเรือแหลมฉบังโดยตรง (กดเพื่อดูที่อยู่)</p>
                     <ul class="branch-card__services">
@@ -144,7 +100,7 @@
                     </ul>
                 </div> -->
 
-                <div class="branch-card">
+                <div class="branch-card" data-branch="latkrabang">
                     <h3 class="branch-card__name" data-i18n="branches.latkrabang_name">สาขาลาดกระบัง</h3>
                     <p class="branch-card__desc" data-i18n="branches.latkrabang_desc">ศูนย์กระจายสินค้าและลานจอดรถขนาด 9,000 ตร.ม. ตั้งอยู่ใกล้กับ ICD เพื่อความรวดเร็วในการขนส่ง (กดเพื่อดูที่อยู่)</p>
                     <ul class="branch-card__services">
@@ -153,41 +109,11 @@
                         <li>Near ICD</li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </div>
 
     <?php include '../component/footer.php'; ?>
-    
-    <!-- Final i18n Test -->
-    <script>
-        // Final verification
-        setTimeout(function() {
-            console.log('=== Final i18n Verification ===');
-            console.log('window.tnbLang available:', !!window.tnbLang);
-            console.log('window.tnbLang initialized:', !!(window.tnbLang && window.tnbLang._initialized));
-            
-            if (window.tnbLang && window.tnbLang._initialized) {
-                var title = window.tnbLang.resolve('branches.title');
-                console.log('Translation test - branches.title:', title);
-                
-                // Test language switching
-                window.testLanguage = function(lang) {
-                    if (window.tnbLang && window.tnbLang.setLang) {
-                        window.tnbLang.setLang(lang);
-                        console.log('Switched to language:', lang);
-                    }
-                };
-                
-                console.log('SUCCESS: i18n system is working!');
-                console.log('You can now use: testLanguage("th"), testLanguage("en"), etc.');
-            } else {
-                console.error('FAILED: i18n system not working');
-                console.log('Please check the root-cause.php diagnostic page');
-            }
-        }, 2000);
-    </script>
 </body>
 
 </html>
