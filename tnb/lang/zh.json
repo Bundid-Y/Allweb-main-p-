@@ -125,13 +125,13 @@
         "overlay_title": "全国分支网络",
         "overlay_desc": "覆盖关键工业和物流区域。",
         "bangsaen_name": "邦盛分支（总部）",
-        "bangsaen_desc": "国内运输管理中心，作为总部协调所有分支运营。",
+        "bangsaen_desc": "国内运输管理中心，作为总部协调所有分支运营 (点击查看地址)。",
         "laemchabang_name": "林查班分支",
-        "laemchabang_desc": "集装箱预订和集装箱堆场服务，直连林查班港口。",
+        "laemchabang_desc": "集装箱预订和集装箱堆场服务，直连林查班港口 (点击查看地址)。",
         "bangkadi_name": "邦卡迪分支",
         "bangkadi_desc": "专业提供仓库间穿梭卡车服务和集装箱管理。",
         "latkrabang_name": "叻甲邦分支",
-        "latkrabang_desc": "配送中心，拥有9,000平方米停车场，战略性靠近ICD以实现快速物流。"
+        "latkrabang_desc": "配送中心，拥有9,000平方米停车场，战略性靠近ICD以实现快速物流 (点击查看地址)。"
     },
     "trucktypes": {
         "title": "卡车类型",

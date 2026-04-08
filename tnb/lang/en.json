@@ -125,13 +125,13 @@
         "overlay_title": "Nationwide Branch Network",
         "overlay_desc": "Covering key industrial and logistics areas.",
         "bangsaen_name": "Bang Saen Branch (Headquarters)",
-        "bangsaen_desc": "Central hub for domestic transport management. Serves as the headquarters coordinating all branch operations.",
+        "bangsaen_desc": "Central hub for domestic transport management. Serves as the headquarters coordinating all branch operations (click to view address).",
         "laemchabang_name": "Laem Chabang Branch",
-        "laemchabang_desc": "Container booking and Container Drop Yard services with direct connection to Laem Chabang Port.",
+        "laemchabang_desc": "Container booking and Container Drop Yard services with direct connection to Laem Chabang Port (click to view address).",
         "bangkadi_name": "Bang Kadi Branch",
         "bangkadi_desc": "Specialized in Shuttle truck services between warehouses and container management.",
         "latkrabang_name": "Lat Krabang Branch",
-        "latkrabang_desc": "Distribution center with a 9,000 sqm truck yard, strategically located near ICD for fast logistics."
+        "latkrabang_desc": "Distribution center with a 9,000 sqm truck yard, strategically located near ICD for fast logistics (click to view address)."
     },
     "trucktypes": {
         "title": "Truck Types",

@@ -56,21 +56,17 @@
     <div class="branches-page">
         <div class="branches-layout">
 
-            <!-- ส่วนรูปภาพ (Sticky) -->
+            <!-- ส่วนแผนที่ (Sticky) -->
             <div class="branches-image-section">
-                <div class="branches-image-wrapper">
-                    <img src="../img/other/service/nationwide/middlemiledistribution.png" alt="TNB Logistics Branches Network">
-                    <div class="branches-image-overlay">
-                        <h3 data-i18n="branches.overlay_title">เครือข่ายสาขาทั่วประเทศ</h3>
-                        <p data-i18n="branches.overlay_desc">ครอบคลุมพื้นที่สำคัญทางอุตสาหกรรมและโลจิสติกส์</p>
-                    </div>
+                <div class="branches-image-wrapper" id="branch-map-container">
+                    <!-- Map will be loaded by JavaScript -->
                 </div>
             </div>
 
             <!-- ส่วนการ์ดสาขา -->
             <div class="branches-cards-section">
 
-                <div class="branch-card" data-branch="bangsaen">
+                <div class="branch-card" data-branch="bangsaen" data-map-url="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1941.5823673197542!2d100.972431!3d13.277644!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102b5007148f2cf%3A0xfe03520168a8b47c!2sTNB%20Logistics!5e0!3m2!1sth!2sth!4v1772427453783!5m2!1sth!2sth">
                     <h3 class="branch-card__name" data-i18n="branches.bangsaen_name">สาขาบางแสน (สำนักงานใหญ่)</h3>
                     <p class="branch-card__desc" data-i18n="branches.bangsaen_desc">ศูนย์กลางการบริหารจัดการการขนส่งภายในประเทศ เป็นสำนักงานใหญ่ที่รวมศูนย์บัญชาการและประสานงานทุกสาขา (กดเพื่อดูที่อยู่)</p>
                     <ul class="branch-card__services">
@@ -80,9 +76,9 @@
                     </ul>
                 </div>
 
-                <div class="branch-card" data-branch="laemchabang">
+                <div class="branch-card" data-branch="laemchabang" data-map-url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4433.973871895208!2d100.98898102323993!3d13.130790482165148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102c9004d55530f%3A0x335bb4b530f87de8!2sTNB%20Logistics%20Co.%2C%20Ltd!5e0!3m2!1sth!2sth!4v1775619485568!5m2!1sth!2sth">
                     <h3 class="branch-card__name" data-i18n="branches.laemchabang_name">สาขาแหลมฉบัง</h3>
-                    <p class="branch-card__desc" data-i18n="branches.laemchabang_desc">ให้บริการจัดจองตู้คอนเทนเนอร์และพื้นที่ฝากวางตู้ (Container Drop Yard) เชื่อมต่อท่าเรือแหลมฉบังโดยตรง (กดเพื่อดูที่อยู่)</p>
+                    <p class="branch-card__desc" data-i18n="branches.laemchabang_desc">ให้บริการจัดจองตู้คอนเทนเนอร์และพื้นที่ฝากวางตู้ (Container Drop Yard) เชื่อมต่อท่าเรือแหลมฉบังโดยตรง <br>(กดเพื่อดูที่อยู่)</p>
                     <ul class="branch-card__services">
                         <li>Container Yard</li>
                         <li>Import/Export</li>
@@ -100,7 +96,7 @@
                     </ul>
                 </div> -->
 
-                <div class="branch-card" data-branch="latkrabang">
+                <div class="branch-card" data-branch="latkrabang" data-map-url="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3875.8835142951084!2d100.79197927509041!3d13.757294986635225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDQ1JzI2LjMiTiAxMDDCsDQ3JzQwLjQiRQ!5e0!3m2!1sth!2sth!4v1775621030378!5m2!1sth!2sth"> 
                     <h3 class="branch-card__name" data-i18n="branches.latkrabang_name">สาขาลาดกระบัง</h3>
                     <p class="branch-card__desc" data-i18n="branches.latkrabang_desc">ศูนย์กระจายสินค้าและลานจอดรถขนาด 9,000 ตร.ม. ตั้งอยู่ใกล้กับ ICD เพื่อความรวดเร็วในการขนส่ง (กดเพื่อดูที่อยู่)</p>
                     <ul class="branch-card__services">

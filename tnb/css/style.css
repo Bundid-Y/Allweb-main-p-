@@ -9429,47 +9429,25 @@ body.page-trucktypes .truck-card__body {
     0 16px 48px rgba(13, 45, 107, 0.12),
     0 4px 12px rgba(0, 0, 0, 0.06);
   background: linear-gradient(135deg, #f1f3f5 0%, #e9ecef 100%);
-  height: 775px;
+  height: 625px;
   width: 100%;
 }
 
-.page-branches .branches-image-wrapper img {
+/* Map container styles */
+.page-branches .branches-map-container {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transform: scale(1.1);
-  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-.page-branches .branches-image-wrapper:hover img {
-  transform: scale(2.15);
-}
-
-.page-branches .branches-image-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(
-    to top,
-    rgba(10, 30, 74, 0.85) 0%,
-    rgba(10, 30, 74, 0.2) 60%,
-    transparent 100%
-  );
-  padding: 2rem;
-  color: white;
-}
-
-.page-branches .branches-image-overlay h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 0.4rem;
-  letter-spacing: -0.01em;
-}
-
-.page-branches .branches-image-overlay p {
-  font-size: 15px;
-  opacity: 0.85;
+.page-branches .branches-map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 .page-branches .branches-cards-section {
