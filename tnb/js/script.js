@@ -665,69 +665,70 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Interactive Map Functionality
-        const branchMaps = {
-            bangsaen: {
-                iframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14065.531865700072!2d100.9555375!3d13.2758925!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102b5007148f2cf%3A0xfe03520168a8b47c!2sTNB%20Logistics!5e1!3m2!1sth!2sth!4v1775556659031!5m2!1sth!2sth" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-                title: 'TNB Logistics  1 headquarters',
-                desc: 'Bangsaen Branch - Main Office'
-            },
-            laemchabang: {
-                iframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.86173369601!2d100.9904078!3d13.1311225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102c9004d55530f%3A0x335bb4b530f87de8!2sTNB%20Logistics%20Co.%2C%20Ltd!5e1!3m2!1sth!2sth!4v1775556694880!5m2!1sth!2sth" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-                title: 'TNB Logistics Laemchabang',
-                desc: 'Laemchabang Branch - Container Services'
-            },
-            latkrabang: {
-                iframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3986.370343202802!2d100.7919792750904!3d13.757294986635223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDQ1JzI2LjMiTiAxMDDCsDQ3JzQwLjQiRQ!5e1!3m2!1sth!2sth!4v1775556240484!5m2!1sth!2sth" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-                title: 'TNB Logistics Latkrabang',
-                desc: 'Latkrabang Branch - Distribution Center'
-            }
-        };
-
-        const imageSection = document.querySelector('.branches-image-wrapper');
-        const originalContent = imageSection ? imageSection.innerHTML : null;
+        const mapContainer = document.getElementById('branch-map-container');
         let currentMap = null;
+        let isTransitioning = false;
 
-        function showBranchMap(branchKey) {
-            if (!imageSection || !branchMaps[branchKey]) return;
+        function showBranchMap(mapUrl, useTransition = true) {
+            if (!mapContainer || !mapUrl || isTransitioning) return;
 
-            const mapData = branchMaps[branchKey];
+            isTransitioning = true;
             
-            // Replace image with map
-            imageSection.innerHTML = `
-                <div class="branches-map-container">
-                    ${mapData.iframe}
-                    <div class="branches-map-overlay">
-                        <h3>${mapData.title}</h3>
-                        <p>${mapData.desc}</p>
-                        <button class="back-to-image-btn" onclick="restoreOriginalImage()">
-                            <span>×</span>  1  Back to overview
-                        </button>
+            const iframeHtml = `<iframe src="${mapUrl}" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
+            
+            if (useTransition) {
+                // Add fade transition
+                mapContainer.style.opacity = '0';
+                mapContainer.style.transition = 'opacity 0.2s ease';
+                
+                setTimeout(() => {
+                    // Replace map
+                    mapContainer.innerHTML = `
+                        <div class="branches-map-container">
+                            ${iframeHtml}
+                        </div>
+                    `;
+                    
+                    // Fade in
+                    mapContainer.style.opacity = '1';
+                    currentMap = mapUrl;
+                    console.log('Showing map with transition');
+                    
+                    setTimeout(() => {
+                        isTransitioning = false;
+                    }, 200);
+                }, 200);
+            } else {
+                // Show immediately without transition
+                mapContainer.innerHTML = `
+                    <div class="branches-map-container">
+                        ${iframeHtml}
                     </div>
-                </div>
-            `;
-            
-            currentMap = branchKey;
-            console.log(`Showing map for ${branchKey}`);
+                `;
+                currentMap = mapUrl;
+                isTransitioning = false;
+                console.log('Showing map (no transition)');
+            }
         }
 
-        function restoreOriginalImage() {
-            if (!imageSection || !originalContent) return;
-            
-            imageSection.innerHTML = originalContent;
-            currentMap = null;
-            console.log('Restored original image');
+        // Show Bangsaen map by default on page load (no transition)
+        const bangsaenCard = document.querySelector('.branch-card[data-branch="bangsaen"]');
+        if (mapContainer && bangsaenCard) {
+            const bangsaenMapUrl = bangsaenCard.getAttribute('data-map-url');
+            if (bangsaenMapUrl) {
+                showBranchMap(bangsaenMapUrl, false);
+            }
         }
-
-        // Make restoreOriginalImage available globally
-        window.restoreOriginalImage = restoreOriginalImage;
 
         // Add click event listeners to branch cards
         const branchCards = document.querySelectorAll('.branch-card[data-branch]');
         branchCards.forEach(card => {
             card.style.cursor = 'pointer';
             card.addEventListener('click', function() {
-                const branchKey = this.getAttribute('data-branch');
-                showBranchMap(branchKey);
+                const mapUrl = this.getAttribute('data-map-url');
+                if (mapUrl) {
+                    showBranchMap(mapUrl, true);
+                }
             });
         });
     }
