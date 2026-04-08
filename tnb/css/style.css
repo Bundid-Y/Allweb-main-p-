@@ -9367,6 +9367,114 @@ body.page-trucktypes .truck-card__body {
   margin-top: 0;
 }
 
+/* =========================================
+   Contact Section for Branches Page
+   ========================================= */
+
+.page-branches .contact-section {
+  padding: 60px 20px 80px;
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+}
+
+/*  Contact Info Row for Branches Page */
+.page-branches .contact-info-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Contact Items for Branches Page */
+.page-branches .contact-item {
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+  min-width: 280px;
+  max-width: 380px;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(13, 45, 107, 0.08);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.page-branches .contact-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 32px rgba(13, 45, 107, 0.13);
+  border-color: rgba(13, 45, 107, 0.1);
+}
+
+/* Contact icon and text group styles for branches page */
+.page-branches .contact-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #0d2d6b 0%, #1e4a8f 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+
+.page-branches .contact-icon svg {
+  color: #ffffff;
+  width: 24px;
+  height: 24px;
+}
+
+.page-branches .contact-text-group h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0d2d6b;
+  margin-bottom: 8px;
+}
+
+.page-branches .contact-text-group p {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive styles for branches page contact section */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .page-branches .contact-info-row {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 15px !important;
+  }
+
+  .page-branches .contact-item {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 20px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-branches .contact-section {
+    padding: 40px 10px 60px;
+    overflow-x: hidden;
+  }
+
+  .page-branches .contact-info-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    max-width: 100%;
+  }
+
+  .page-branches .contact-item {
+    max-width: 100%;
+    width: 100%;
+    padding: 15px;
+  }
+}
+
 /* Branches card footer spacing override */
 .page-trucktypes .trucktypes-cards-section,
 .page-branches .branches-layout,

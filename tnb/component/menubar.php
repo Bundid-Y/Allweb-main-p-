@@ -52,8 +52,9 @@
                             data-i18n="nav.technology">เทคโนโลยี</a></li>
                     <li class="nav-item"><a href="../main/branches.php" class="nav-link"
                             data-i18n="nav.branches">สาขา</a></li>
-                    <li class="nav-item"><a href="../main/contact.php" class="nav-link"
+                    <!--<li class="nav-item"><a href="../main/contact.php" class="nav-link"
                             data-i18n="nav.contact">ติดต่อเรา</a></li>
+                    -->        
                     <!--        
                     <li class="nav-item"><a href="../main/quotation.php" class="nav-link"
                             data-i18n="nav.quotation">ขอใบเสนอราคา</a></li>
