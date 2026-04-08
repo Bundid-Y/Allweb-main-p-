@@ -47,7 +47,7 @@
     <!-- Safety Standards Section - Single Layout like expertise.php -->
     <div class="content-section layout_padding" style="flex: 1;">
         <div class="expertise-row"
-            style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 40px; flex-direction: row-reverse;">
+            style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 30px; flex-direction: row-reverse;">
             <!-- Right: Image -->
             <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column;">
                 <div class="expertise-image-wrap">
@@ -57,58 +57,68 @@
             <!-- Left: All Safety Content -->
             <div style="flex: 1; min-width: 300px; padding-bottom: 20px;">
                 <h1 class="details-title" data-i18n="safety.title">มาตรฐานความปลอดภัย</h1>
-                <h2 style="font-size: 24px; color: #325662; margin-top: 10px; font-weight: 700;"
+                <h2 style="font-size: 22px; color: #325662; margin-top: 3px; font-weight: 700;"
                     data-i18n="safety.subtitle">มาตรฐานความปลอดภัยและมาตรฐานการดำเนินงานระดับสากล</h2>
 
-                <p class="details-desc" style="margin-bottom: 30px;">
+                <p class="details-desc" style="margin-bottom: 12px; font-size: 15px;">
                     <strong>"TNB Logistics ให้ความสำคัญกับความปลอดภัยเป็นอันดับแรก"</strong><br><br>
-                    เรามุ่งมั่นในการกำหนดมาตรฐานความปลอดภัยระดับสากลเพื่อให้มั่นใจว่าทุกการดำเนินงานเป็นไปอย่างปลอดภัยและมีประสิทธิภาพ
+                    TNB Logistics Co., Ltd. ให้ความสำคัญสูงสุดกับความปลอดภัยในการดำเนินงานขนส่งสินค้า โดยมุ่งมั่นดำเนินธุรกิจภายใต้มาตรฐานความปลอดภัยที่เป็นระบบ ครอบคลุมบุคลากร ยานพาหนะ สินค้า และผู้มีส่วนเกี่ยวข้องทุกภาคส่วน เพื่อให้มั่นใจว่าการให้บริการเป็นไปอย่างปลอดภัย มีประสิทธิภาพ และเป็นไปตามข้อกำหนดทางกฎหมายที่เกี่ยวข้อง
                 </p>
 
                 <div class="expertise-text-list">
                     <div class="expertise-item">
-                        <div class="expertise-number">01</div>
                         <div>
-                            <div class="expertise-desc" style="font-size: 18px; font-weight: 600; padding-top: 5px;">
-                                การปฏิบัติตามกฎหมายและการควบคุมการปฏิบัติงาน</div>
-                            <p style="margin-top: 8px; font-size: 14px; color: #666; line-height: 1.5;">
-                                ปฏิบัติตามกฎหมายจราจร ข้อกำหนดท่าเรือ และระเบียบด้านโลจิสติกส์อย่างเคร่งครัด พร้อมตรวจสอบเอกสารการขนส่งครบถ้วน</p>
+                            <div class="expertise-desc" style="font-size: 17px; font-weight: 600; padding-top: 3px;">
+                                1.การปฏิบัติตามกฎหมายและการควบคุมการปฏิบัติงาน</div>
+                            <ul style="margin-top: 3px; font-size: 15px; color: #666; line-height: 1.5; padding-left: 18px;">
+                                <li>ปฏิบัติตามกฎหมายจราจร ข้อกำหนดท่าเรือ และระเบียบด้านโลจิสติกส์อย่างเคร่งครัด</li>
+                                <li>ตรวจสอบเอกสารการขนส่งครบถ้วนก่อนเริ่มปฏิบัติงาน</li>
+                                <li>ควบคุมกระบวนการรับ–ส่งมอบสินค้า พร้อมรายงานเหตุผิดปกติตามขั้นตอนบริษัท</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="expertise-item">
-                        <div class="expertise-number">02</div>
                         <div>
-                            <div class="expertise-desc" style="font-size: 18px; font-weight: 600; padding-top: 5px;">
-                                การบริหารความปลอดภัยและศักยภาพพนักงานขับรถ</div>
-                            <p style="margin-top: 8px; font-size: 14px; color: #666; line-height: 1.5;">
-                                คัดเลือกพนักงานขับรถที่มีใบอนุญาตถูกต้อง ผ่านการอบรมด้านความปลอดภัย และควบคุมชั่วโมงการทำงานอย่างเหมาะสม</p>
+                            <div class="expertise-desc" style="font-size: 17px; font-weight: 600; padding-top: 3px;">
+                                2.การบริหารความปลอดภัยและศักยภาพพนักงานขับรถ</div>
+                            <ul style="margin-top: 3px; font-size: 15px; color: #666; line-height: 1.5; padding-left: 18px;">
+                                <li>คัดเลือกพนักงานขับรถที่มีใบอนุญาตถูกต้องและผ่านการอบรมด้านความปลอดภัย</li>
+                                <li>ตรวจสอบความพร้อมก่อนปฏิบัติงาน และควบคุมชั่วโมงการทำงานอย่างเหมาะสม</li>
+                                <li>ติดตามและประเมินพฤติกรรมการขับขี่อย่างต่อเนื่อง</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="expertise-item">
-                        <div class="expertise-number">03</div>
                         <div>
-                            <div class="expertise-desc" style="font-size: 18px; font-weight: 600; padding-top: 5px;">
-                                การควบคุมความปลอดภัยยานพาหนะและการบำรุงรักษาเชิงป้องกัน</div>
-                            <p style="margin-top: 8px; font-size: 14px; color: #666; line-height: 1.5;">
-                                ตรวจสอบสภาพรถก่อนและหลังการใช้งาน บำรุงรักษาตามรอบระยะเวลา และเตรียมความพร้อมอุปกรณ์ยึดตรึงสินค้า</p>
+                            <div class="expertise-desc" style="font-size: 17px; font-weight: 600; padding-top: 3px;">
+                                3.การควบคุมความปลอดภัยยานพาหนะและการบำรุงรักษาเชิงป้องกัน</div>
+                            <ul style="margin-top: 3px; font-size: 15px; color: #666; line-height: 1.5; padding-left: 18px;">
+                                <li>ตรวจสอบสภาพรถก่อนและหลังการใช้งาน (Pre & Post Inspection)</li>
+                                <li>บำรุงรักษารถตามรอบระยะเวลาอย่างสม่ำเสมอ</li>
+                                <li>เตรียมความพร้อมอุปกรณ์ยึดตรึงสินค้าและรถสำรองกรณีฉุกเฉิน</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="expertise-item">
-                        <div class="expertise-number">04</div>
                         <div>
-                            <div class="expertise-desc" style="font-size: 18px; font-weight: 600; padding-top: 5px;">
-                                การควบคุมความปลอดภัยและความสมบูรณ์ของสินค้า</div>
-                            <p style="margin-top: 8px; font-size: 14px; color: #666; line-height: 1.5;">
-                                ตรวจสอบสภาพตู้คอนเทนเนอร์ ควบคุมกระบวนการ Loading/Unloading และจัดเก็บเอกสารยืนยันการส่งมอบ</p>
+                            <div class="expertise-desc" style="font-size: 17px; font-weight: 600; padding-top: 3px;">
+                                4.การควบคุมความปลอดภัยและความสมบูรณ์ของสินค้า</div>
+                            <ul style="margin-top: 3px; font-size: 15px; color: #666; line-height: 1.5; padding-left: 18px;">
+                                <li>ตรวจสอบสภาพตู้คอนเทนเนอร์ก่อนรับและส่งมอบ</li>
+                                <li>ควบคุมกระบวนการ Loading และ Unloading ตามมาตรฐาน</li>
+                                <li>จัดเก็บเอกสารยืนยันการส่งมอบเพื่อความโปร่งใสและตรวจสอบย้อนหลังได้</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="expertise-item">
-                        <div class="expertise-number">05</div>
                         <div>
-                            <div class="expertise-desc" style="font-size: 18px; font-weight: 600; padding-top: 5px;">
-                                การใช้เทคโนโลยีเพื่อควบคุมความปลอดภัย</div>
-                            <p style="margin-top: 8px; font-size: 14px; color: #666; line-height: 1.5;">
-                                ระบบติดตามสถานะงานและยานพาหนะแบบ Real-Time กล้องหน้ารถ และระบบแจ้งเตือนอัตโนมัติ (Geofencing)</p>
+                            <div class="expertise-desc" style="font-size: 17px; font-weight: 600; padding-top: 3px;">
+                                5.การใช้เทคโนโลยีเพื่อควบคุมความปลอดภัย</div>
+                            <ul style="margin-top: 3px; font-size: 15px; color: #666; line-height: 1.5; padding-left: 18px;">
+                                <li>ระบบติดตามสถานะงานและยานพาหนะแบบ Real-Time</li>
+                                <li>ระบบกล้องหน้ารถและกล้องตรวจจับพฤติกรรมการขับขี่</li>
+                                <li>ใช้ระบบแจ้งเตือนอัตโนมัติและควบคุมพื้นที่ปฏิบัติงาน (Geofencing)</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -116,18 +126,56 @@
         </div>
     </div>
 
-    <!-- PPE Section -->
-    <section class="ppe-section">
-        <div class="container">
-            <div class="ppe-content">
-                <div class="ppe-icon">
-                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+    <!-- PPE Section - Image Left, Text Right -->
+    <div class="content-section layout_padding" style="flex: 1; padding-top: 20px;">
+        <div class="expertise-row"
+            style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 30px; flex-direction: row;">
+            <!-- Left: Image -->
+            <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column;">
+                <div class="expertise-image-wrap">
+                    <img src="../img/other/about/safety2.webp" alt="PPE Standards">
                 </div>
-                <h2 class="ppe-title">มาตรฐานการแต่งกายและอุปกรณ์ป้องกันส่วนบุคคล (PPE)</h2>
-                <p class="ppe-description">บริษัทกำหนดมาตรฐานการแต่งกายและการใช้อุปกรณ์ป้องกันส่วนบุคคล (PPE) สำหรับพนักงานทุกคนที่ปฏิบัติงานในพื้นที่คลังสินค้า ท่าเรือ พื้นที่ขนถ่ายสินค้า และหน้างานลูกค้า เพื่อป้องกันอุบัติเหตุ ลดความเสี่ยงจากสภาพแวดล้อมการทำงาน และสร้างมาตรฐานความปลอดภัยเดียวกันทั้งองค์กร</p>
+            </div>
+            <!-- Right: All PPE Content -->
+            <div style="flex: 1; min-width: 300px; padding-bottom: 20px;">
+                <h1 class="details-title">มาตรฐานการแต่งกายและอุปกรณ์ป้องกันส่วนบุคคล</h1>
+                <h2 style="font-size: 22px; color: #325662; margin-top: 3px; font-weight: 700;">
+                     มาตรฐานการแต่งกายและอุปกรณ์ป้องกันส่วนบุคคล (PPE)</h2>
+
+                <p class="details-desc" style="margin-bottom: 15px; font-size: 15px;">
+                     บริษัทกำหนดมาตรฐานการแต่งกายและการใช้อุปกรณ์ป้องกันส่วนบุคคล (PPE) สำหรับพนักงานทุกคนที่ปฏิบัติงานในพื้นที่คลังสินค้า ท่าเรือ พื้นที่ขนถ่ายสินค้า และหน้างานลูกค้า เพื่อป้องกันอุบัติเหตุ ลดความเสี่ยงจากสภาพแวดล้อมการทำงาน และสร้างมาตรฐานความปลอดภัยเดียวกันทั้งองค์กร
+                </p>
+
+                <div class="expertise-text-list">
+                    <div class="expertise-item">
+                        <div>
+                            <div class="expertise-desc" style="font-size: 17px; font-weight: 600; padding-top: 3px;">
+                                 1.พนักงานที่ปฏิบัติงานภาคสนามต้องสวมใส่อุปกรณ์ดังต่อไปนี้อย่างครบถ้วน</div>
+                            <ul style="margin-top: 3px; font-size: 15px; color: #666; line-height: 1.5; padding-left: 18px;">
+                                <li>หมวกนิรภัย – ป้องกันแรงกระแทกจากวัตถุตกหล่น</li>
+                                <li>แว่นตานิรภัย – ป้องกันเศษวัสดุหรือฝุ่นละออง</li>
+                                <li>เสื้อกั๊กสะท้อนแสง – เพิ่มการมองเห็นในพื้นที่ปฏิบัติงาน</li>
+                                <li>ถุงมือนิรภัย – ป้องกันการบาดเจ็บจากการจับยึดหรือขนย้ายสินค้า</li>
+                                <li>รองเท้านิรภัยหัวเหล็ก – ป้องกันการกระแทกและการเหยียบของมีคม</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="expertise-item">
+                        <div>
+                            <div class="expertise-desc" style="font-size: 17px; font-weight: 600; padding-top: 3px;">
+                                2.การควบคุมและกำกับดูแลการสวมใส่ PPE</div>
+                            <ul style="margin-top: 3px; font-size: 15px; color: #666; line-height: 1.5; padding-left: 18px;">
+                                <li>พนักงานต้องสวมใส่ PPE ครบถ้วนก่อนเข้าพื้นที่ปฏิบัติงาน</li>
+                                <li>หัวหน้างานมีหน้าที่ตรวจสอบความถูกต้องและความพร้อมก่อนเริ่มงาน</li>
+                                <li>กำหนดจุดตรวจ PPE ในพื้นที่เสี่ยง</li>
+                                <li>ไม่อนุญาตให้ปฏิบัติงานหากไม่สวมใส่อุปกรณ์ตามข้อกำหนด</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <?php include '../component/footer.php'; ?>
 </body>
