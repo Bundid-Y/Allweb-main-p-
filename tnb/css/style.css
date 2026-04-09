@@ -8337,26 +8337,45 @@ body.page-trucktypes .truck-card__body {
   }
 }
 
-/* Tablet responsive */
+/* Tablet responsive — iPad Air (820px) & iPad Pro (1024px) */
 @media (max-width: 1024px) and (min-width: 769px) {
   body.page-trucktypes .trucktypes-interactive__grid {
-    gap: 0.5rem;
+    flex-direction: column;
+    height: auto;
+    gap: 1.5rem;
   }
 
   body.page-trucktypes .truck-card {
+    flex: 1;
+    height: auto;
     border: 3px solid #0d2d6b !important;
   }
 
+  body.page-trucktypes .truck-card:hover {
+    transform: translateY(-5px);
+    flex: 1;
+    border: 3px solid #0d2d6b !important;
+  }
+
+  body.page-trucktypes .truck-card:not(:hover) {
+    opacity: 1;
+    transform: none;
+  }
+
+  body.page-trucktypes .truck-card__img-container {
+    height: 180px;
+  }
+
   body.page-trucktypes .truck-card__name {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   body.page-trucktypes .truck-card__desc {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   body.page-trucktypes .truck-card__specs {
-    font-size: 11px;
+    font-size: 13px;
   }
 }
 
