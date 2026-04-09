@@ -8671,7 +8671,16 @@ body.page-trucktypes .truck-card__body {
   font-weight: 600;
 }
 
-/* Responsive for Technology Page โ€” Scoped */
+/* Responsive for Technology Page โ€" iPad Air (820px) */
+@media (min-width: 769px) and (max-width: 820px) {
+  .page-technology .card-ui-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 0 20px;
+  }
+}
+
+/* Responsive for Technology Page โ€" Scoped */
 @media (max-width: 768px) {
   .page-technology .card-ui-header {
     padding: 60px 0 50px;
