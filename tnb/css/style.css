@@ -6621,6 +6621,7 @@ a {
   transform: translateX(-50%) translateY(0);
 }
 
+
 .header .dropdown-link {
   display: block;
 
@@ -6980,7 +6981,7 @@ a {
 /* Language button reset (inside dropdown, styled as links) */
 
 .tnb-lang-btn,
-.tnb-lang-menu .dropdown-link {
+.header .tnb-lang-menu .dropdown-link {
   background: none;
 
   border: none;
@@ -6989,7 +6990,7 @@ a {
 
   width: 100%;
 
-  text-align: left;
+  text-align: center;
 
   padding: 8px 16px;
 
@@ -7001,6 +7002,8 @@ a {
 
   align-items: center;
 
+  justify-content: center;
+
   gap: 8px;
 
   transition:
@@ -7011,7 +7014,7 @@ a {
 }
 
 .tnb-lang-btn:hover,
-.tnb-lang-menu .dropdown-link:hover {
+.header .tnb-lang-menu .dropdown-link:hover {
   background: var(--primary-light, #f0f4ff);
 
   color: var(--primary-color, #0d2d6b);
@@ -7029,7 +7032,7 @@ a {
 .header .tnb-lang-switcher:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
+  transform: translateX(-50%) translateY(0);
 }
 
 /* Country flag emoji spacing */
@@ -7069,6 +7072,16 @@ html {
     padding: 10px 16px;
 
     font-size: 1rem;
+  }
+
+  .header .tnb-lang-menu .dropdown-link {
+    justify-content: flex-start !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header .tnb-lang-menu .dropdown-link {
+    justify-content: center !important;
   }
 }
 
