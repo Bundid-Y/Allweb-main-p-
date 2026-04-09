@@ -9377,13 +9377,19 @@ body.page-trucktypes .truck-card__body {
 }
 
 /*  Contact Info Row for Branches Page */
-.page-branches .contact-info-row {
+.page-branches .contact-section .container .contact-info-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  max-width: 1200px;
+  max-width: 1400px !important;
   margin: 0 auto;
+  padding: 0 !important;
+}
+
+/* Override container width for branches contact section */
+.page-branches .contact-section .container {
+  max-width: 1400px !important;
 }
 
 /* Contact Items for Branches Page */
@@ -9441,11 +9447,20 @@ body.page-trucktypes .truck-card__body {
 }
 
 /* Responsive styles for branches page contact section */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .page-branches .contact-info-row {
+@media (max-width: 1024px) {
+  .page-branches .contact-section {
+    padding: 40px 20px 60px;
+  }
+
+  .page-branches .contact-section .container {
+    max-width: 600px !important;
+  }
+
+  .page-branches .contact-section .container .contact-info-row {
     flex-direction: column !important;
     align-items: center !important;
     gap: 15px !important;
+    max-width: 600px !important;
   }
 
   .page-branches .contact-item {
@@ -9455,23 +9470,44 @@ body.page-trucktypes .truck-card__body {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .page-branches .contact-section {
-    padding: 40px 10px 60px;
+    padding: 30px 10px 50px;
     overflow-x: hidden;
   }
 
-  .page-branches .contact-info-row {
+  .page-branches .contact-section .container {
+    max-width: 100% !important;
+    padding: 0 10px !important;
+  }
+
+  .page-branches .contact-section .container .contact-info-row {
     flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    max-width: 100%;
+    align-items: stretch;
+    gap: 15px;
+    max-width: 100% !important;
   }
 
   .page-branches .contact-item {
     max-width: 100%;
     width: 100%;
-    padding: 15px;
+    padding: 15px 12px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .page-branches .contact-icon {
+    margin: 0 auto 12px auto;
+  }
+
+  .page-branches .contact-text-group h4 {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .page-branches .contact-text-group p {
+    font-size: 14px;
+    line-height: 1.4;
   }
 }
 
@@ -9702,7 +9738,7 @@ body.page-trucktypes .truck-card__body {
 @media (max-width: 1024px) {
   .page-branches .branches-layout {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2rem;
     align-items: center;
     padding: 40px 20px 80px;
   }
@@ -9710,12 +9746,18 @@ body.page-trucktypes .truck-card__body {
   .page-branches .branches-image-section {
     position: relative;
     top: auto;
-    max-width: 600px;
+    max-width: 100%;
     margin: 0 auto;
+    width: 100%;
+  }
+
+  .page-branches .branches-image-wrapper {
+    height: 450px;
+    border-radius: 16px;
   }
 
   .page-branches .branches-cards-section {
-    max-width: 600px;
+    max-width: 100%;
     margin: 0 auto;
   }
 }

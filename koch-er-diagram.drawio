@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-04-09T08:56:00.000Z" agent="5.0" etag="koch-er-diagram" version="21.6.5" type="device">
+  <diagram name="Koch ER Diagram" id="koch-er-diagram">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- CUSTOMERS Entity -->
+        <mxCell id="2" value="CUSTOMERS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="100" y="100" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="customer_id (PK)&lt;br&gt;company_name&lt;br&gt;contact_name&lt;br&gt;phone&lt;br&gt;email&lt;br&gt;address&lt;br&gt;tax_id" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="100" y="140" width="180" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- ORDERS Entity -->
+        <mxCell id="4" value="ORDERS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="400" y="100" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="order_id (PK)&lt;br&gt;customer_id (FK)&lt;br&gt;order_date&lt;br&gt;pickup_address&lt;br&gt;delivery_address&lt;br&gt;goods_type&lt;br&gt;weight&lt;br&gt;status&lt;br&gt;total_amount" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="400" y="140" width="180" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- VEHICLES Entity -->
+        <mxCell id="6" value="VEHICLES" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="700" y="100" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="vehicle_id (PK)&lt;br&gt;license_plate&lt;br&gt;vehicle_type&lt;br&gt;capacity&lt;br&gt;model&lt;br&gt;year&lt;br&gt;status&lt;br&gt;last_maintenance" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="700" y="140" width="180" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- EMPLOYEES Entity -->
+        <mxCell id="8" value="EMPLOYEES" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="100" y="350" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="employee_id (PK)&lt;br&gt;first_name&lt;br&gt;last_name&lt;br&gt;position&lt;br&gt;phone&lt;br&gt;email&lt;br&gt;license_no&lt;br&gt;hire_date&lt;br&gt;status" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="100" y="390" width="180" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- SHIPMENTS Entity -->
+        <mxCell id="10" value="SHIPMENTS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="400" y="350" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="shipment_id (PK)&lt;br&gt;order_id (FK)&lt;br&gt;vehicle_id (FK)&lt;br&gt;driver_id (FK)&lt;br&gt;pickup_date&lt;br&gt;delivery_date&lt;br&gt;status&lt;br&gt;tracking_no" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="400" y="390" width="180" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- MAINTENANCE Entity -->
+        <mxCell id="12" value="MAINTENANCE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="700" y="350" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="maintenance_id (PK)&lt;br&gt;vehicle_id (FK)&lt;br&gt;type&lt;br&gt;description&lt;br&gt;cost&lt;br&gt;start_date&lt;br&gt;end_date&lt;br&gt;status" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="700" y="390" width="180" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- QUOTATIONS Entity -->
+        <mxCell id="14" value="QUOTATIONS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="250" y="600" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="quotation_id (PK)&lt;br&gt;customer_id (FK)&lt;br&gt;quotation_date&lt;br&gt;valid_until&lt;br&gt;pickup_address&lt;br&gt;delivery_address&lt;br&gt;estimated_cost&lt;br&gt;status" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="250" y="640" width="180" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- PAYMENTS Entity -->
+        <mxCell id="16" value="PAYMENTS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="550" y="600" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="payment_id (PK)&lt;br&gt;order_id (FK)&lt;br&gt;payment_date&lt;br&gt;amount&lt;br&gt;payment_method&lt;br&gt;status&lt;br&gt;transaction_id" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="550" y="640" width="180" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Relationships with Crow's Foot Notation -->
+        
+        <!-- CUSTOMERS to ORDERS (1:N) -->
+        <mxCell id="18" value="" style="endArrow=crowFoot;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;" edge="1" parent="1" source="3" target="5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="250" as="sourcePoint" />
+            <mxPoint x="350" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19" value="places" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="18">
+          <mxGeometry x="-0.3" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- ORDERS to SHIPMENTS (1:N) -->
+        <mxCell id="20" value="" style="endArrow=crowFoot;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;" edge="1" parent="1" source="5" target="11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="300" as="sourcePoint" />
+            <mxPoint x="500" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21" value="generates" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="20">
+          <mxGeometry x="-0.3" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- VEHICLES to SHIPMENTS (1:N) -->
+        <mxCell id="22" value="" style="endArrow=crowFoot;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;" edge="1" parent="1" source="7" target="11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="790" y="280" as="sourcePoint" />
+            <mxPoint x="590" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="23" value="assigned_to" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="22">
+          <mxGeometry x="-0.3" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- EMPLOYEES to SHIPMENTS (1:N) -->
+        <mxCell id="24" value="" style="endArrow=crowFoot;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;" edge="1" parent="1" source="9" target="11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="450" as="sourcePoint" />
+            <mxPoint x="350" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="25" value="drives" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="24">
+          <mxGeometry x="-0.3" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- VEHICLES to MAINTENANCE (1:N) -->
+        <mxCell id="26" value="" style="endArrow=crowFoot;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;" edge="1" parent="1" source="7" target="13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="790" y="280" as="sourcePoint" />
+            <mxPoint x="790" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="27" value="requires" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="26">
+          <mxGeometry x="-0.3" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- CUSTOMERS to QUOTATIONS (1:N) -->
+        <mxCell id="28" value="" style="endArrow=crowFoot;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;" edge="1" parent="1" source="3" target="15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="280" as="sourcePoint" />
+            <mxPoint x="340" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="29" value="requests" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="28">
+          <mxGeometry x="-0.3" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- ORDERS to PAYMENTS (1:N) -->
+        <mxCell id="30" value="" style="endArrow=crowFoot;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;" edge="1" parent="1" source="5" target="17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="300" as="sourcePoint" />
+            <mxPoint x="640" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="31" value="has" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="30">
+          <mxGeometry x="-0.3" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- QUOTATIONS to ORDERS (1:1) -->
+        <mxCell id="32" value="" style="endArrow=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=none;startFill=0;dashed=1;" edge="1" parent="1" source="15" target="5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="600" as="sourcePoint" />
+            <mxPoint x="490" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="33" value="converts_to" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="32">
+          <mxGeometry x="-0.3" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
