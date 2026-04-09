@@ -61,8 +61,8 @@
                     <h3 class="truck-card__name" data-i18n="trucktypes.pickup_name">Pickup Jumbo</h3>
                     <p class="truck-card__desc" data-i18n="trucktypes.pickup_desc">รถกระบะจัมโบ้สำหรับขนส่งสินค้าขนาดเล็กถึงกลาง เหมาะกับการจัดส่งในเขตเมืองและพื้นที่จำกัด</p>
                     <ul class="truck-card__specs">
-                        <li><strong>น้ำหนักบรรทุก:</strong> 1 – 2 ตัน</li>
-                        <li><strong>ขนาดตู้:</strong> 2.5 x 1.7 x 1.8 ม.</li>
+                        <li><strong data-i18n="trucktypes.spec_load">น้ำหนักบรรทุก:</strong> <span data-i18n="trucktypes.pickup_load">1 – 2 ตัน</span></li>
+                        <li><strong data-i18n="trucktypes.spec_size">ขนาดตู้:</strong> <span data-i18n="trucktypes.pickup_size">2.5 x 1.7 x 1.8 ม.</span></li>
                     </ul>
                 </div>
             </div>
@@ -75,8 +75,8 @@
                     <h3 class="truck-card__name" data-i18n="trucktypes.6wheel_name">6 Wheel</h3>
                     <p class="truck-card__desc" data-i18n="trucktypes.6wheel_desc">รถ 6 ล้อสำหรับขนส่งสินค้าทั่วไป รองรับน้ำหนักปานกลาง เหมาะสำหรับการกระจายสินค้าในประเทศ</p>
                     <ul class="truck-card__specs">
-                        <li><strong>น้ำหนักบรรทุก:</strong> 5 – 6 ตัน</li>
-                        <li><strong>ขนาดตู้:</strong> 6.0 x 2.3 x 2.3 ม.</li>
+                        <li><strong data-i18n="trucktypes.spec_load">น้ำหนักบรรทุก:</strong> <span data-i18n="trucktypes.6wheel_load">5 – 6 ตัน</span></li>
+                        <li><strong data-i18n="trucktypes.spec_size">ขนาดตู้:</strong> <span data-i18n="trucktypes.6wheel_size">6.0 x 2.3 x 2.3 ม.</span></li>
                     </ul>
                 </div>
             </div>
@@ -89,8 +89,8 @@
                     <h3 class="truck-card__name" data-i18n="trucktypes.6wheeltrailer_name">6 Wheel Trailer</h3>
                     <p class="truck-card__desc" data-i18n="trucktypes.6wheeltrailer_desc">รถ 6 ล้อพ่วงสำหรับสินค้าขนาดใหญ่ ให้ความยืดหยุ่นในการขนส่งด้วยพื้นที่บรรทุกที่เพิ่มขึ้น</p>
                     <ul class="truck-card__specs">
-                        <li><strong>น้ำหนักบรรทุก:</strong> 10 – 12 ตัน</li>
-                        <li><strong>ขนาดตู้:</strong> 7.5 x 2.3 x 2.3 ม.</li>
+                        <li><strong data-i18n="trucktypes.spec_load">น้ำหนักบรรทุก:</strong> <span data-i18n="trucktypes.6wheeltrailer_load">10 – 12 ตัน</span></li>
+                        <li><strong data-i18n="trucktypes.spec_size">ขนาดตู้:</strong> <span data-i18n="trucktypes.6wheeltrailer_size">7.5 x 2.3 x 2.3 ม.</span></li>
                     </ul>
                 </div>
             </div>
@@ -103,8 +103,8 @@
                     <h3 class="truck-card__name" data-i18n="trucktypes.10wheeltrailer_name">10 Wheel Trailer</h3>
                     <p class="truck-card__desc" data-i18n="trucktypes.10wheeltrailer_desc">รถ 10 ล้อพ่วงรองรับน้ำหนักบรรทุกสูง เหมาะสำหรับสินค้าอุตสาหกรรมและวัตถุดิบขนาดใหญ่</p>
                     <ul class="truck-card__specs">
-                        <li><strong>น้ำหนักบรรทุก:</strong> 15 – 20 ตัน</li>
-                        <li><strong>ขนาดตู้:</strong> 9.5 x 2.4 x 2.5 ม.</li>
+                        <li><strong data-i18n="trucktypes.spec_load">น้ำหนักบรรทุก:</strong> <span data-i18n="trucktypes.10wheeltrailer_load">15 – 20 ตัน</span></li>
+                        <li><strong data-i18n="trucktypes.spec_size">ขนาดตู้:</strong> <span data-i18n="trucktypes.10wheeltrailer_size">9.5 x 2.4 x 2.5 ม.</span></li>
                     </ul>
                 </div>
             </div>
@@ -117,8 +117,8 @@
                     <h3 class="truck-card__name" data-i18n="trucktypes.trailer_name">Trailer Head</h3>
                     <p class="truck-card__desc" data-i18n="trucktypes.trailer_desc">หัวลากสำหรับขนส่งตู้คอนเทนเนอร์ รองรับทั้งตู้ 20 ฟุตและ 40 ฟุต เชื่อมต่อท่าเรือกับคลังสินค้า</p>
                     <ul class="truck-card__specs">
-                        <li><strong>น้ำหนักบรรทุก:</strong> 20 – 30 ตัน</li>
-                        <li><strong>รองรับ:</strong> Container 20' / 40'</li>
+                        <li><strong data-i18n="trucktypes.spec_load">น้ำหนักบรรทุก:</strong> <span data-i18n="trucktypes.trailer_load">20 – 30 ตัน</span></li>
+                        <li><strong data-i18n="trucktypes.spec_support">รองรับ:</strong> <span data-i18n="trucktypes.trailer_support">Container 20' / 40'</span></li>
                     </ul>
                 </div>
             </div>

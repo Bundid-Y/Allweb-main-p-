@@ -186,7 +186,20 @@
         "10wheeltrailer_name": "10 Wheel Trailer",
         "10wheeltrailer_desc": "10轮拖车，支持重载，适用于工业品和大型原材料。",
         "trailer_name": "Trailer Head",
-        "trailer_desc": "牵引车头，用于集装箱运输，支持20英尺和40英尺集装箱，连接港口与仓库。"
+        "trailer_desc": "集装箱运输拖车头，支持20英尺和40英尺集装箱，连接港口和仓库。",
+        "spec_load": "载重:",
+        "spec_size": "集装箱尺寸:",
+        "spec_support": "支持:",
+        "pickup_load": "1 – 2 吨",
+        "pickup_size": "2.5 x 1.7 x 1.8 米",
+        "6wheel_load": "5 – 6 吨",
+        "6wheel_size": "6.0 x 2.3 x 2.3 米",
+        "6wheeltrailer_load": "10 – 12 吨",
+        "6wheeltrailer_size": "7.5 x 2.3 x 2.3 米",
+        "10wheeltrailer_load": "15 – 20 吨",
+        "10wheeltrailer_size": "9.5 x 2.4 x 2.5 米",
+        "trailer_load": "20 – 30 吨",
+        "trailer_support": "Container 20' / 40'"
     },
     "partners": {
         "title": "合作伙伴",
@@ -236,9 +249,10 @@
     "company": {
         "title": "公司简介",
         "subtitle": "TNB物流有限公司",
-        "p1": "成立于2020年10月14日，提供综合物流和运输服务，涵盖国内和国际运输，以满足工业和企业客户的需求。",
-        "p2": "公司成立时注册资本为1,000,000泰铢，并于2023年8月22日更名为TNB物流有限公司，同时将注册资本增至5,000,000泰铢，以支持业务扩张和持续增长。",
-        "p3": "TNB专注于开发现代化、标准化和安全的运输系统，提供配备各种运输车辆和实时跟踪系统的服务，以建立信任并为客户提供高质量、及时和可持续的服务。"
+        "p1": "成立以运营<strong style=\"color: #0D2D6B;\">综合物流和运输业务</strong>，涵盖国内和国际运输，提供满足工业和企业部门客户需求的<strong style=\"color: #0D2D6B;\">供应链解决方案</strong>。",
+        "p2": "公司持续扩大服务范围，从货物运输到<strong style=\"color: #0D2D6B;\">综合物流管理</strong>，从运输规划、仓库管理到高效跟踪和控制运输过程，以服务多样化的工业需求。",
+        "p3": "目前，<strong style=\"color: #0D2D6B;\">TNB物流有限公司</strong>以明确的方向运营，专注于发展服务能力和扩大能力以满足客户持续增长的需求。",
+        "p4": "基于持续发展理念，<strong style=\"color: #0D2D6B;\">TNB</strong>专注于在服务过程中应用<strong style=\"color: #0D2D6B;\">现代技术</strong>，无论是<strong style=\"color: #0D2D6B;\">实时作业跟踪系统</strong>和数据管理，以提高运输的准确性、速度和安全性，同时提供高质量、及时的服务并建立长期的客户信心。"
     },
     "expertise": {
         "title": "我们的专业知识",

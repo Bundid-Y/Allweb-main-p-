@@ -186,7 +186,20 @@
         "10wheeltrailer_name": "10 Wheel Trailer",
         "10wheeltrailer_desc": "10-wheel trailer supporting heavy loads, ideal for industrial goods and large raw materials.",
         "trailer_name": "Trailer Head",
-        "trailer_desc": "Trailer head for container transport, supporting both 20ft and 40ft containers between ports and warehouses."
+        "trailer_desc": "Trailer head for container transportation, supporting both 20' and 40' containers, connecting ports to warehouses.",
+        "spec_load": "Load Capacity:",
+        "spec_size": "Container Size:",
+        "spec_support": "Supports:",
+        "pickup_load": "1 – 2 tons",
+        "pickup_size": "2.5 x 1.7 x 1.8 m",
+        "6wheel_load": "5 – 6 tons",
+        "6wheel_size": "6.0 x 2.3 x 2.3 m",
+        "6wheeltrailer_load": "10 – 12 tons",
+        "6wheeltrailer_size": "7.5 x 2.3 x 2.3 m",
+        "10wheeltrailer_load": "15 – 20 tons",
+        "10wheeltrailer_size": "9.5 x 2.4 x 2.5 m",
+        "trailer_load": "20 – 30 tons",
+        "trailer_support": "Container 20' / 40'"
     },
     "partners": {
         "title": "Partners",
@@ -236,9 +249,10 @@
     "company": {
         "title": "Company History",
         "subtitle": "TNB Logistics Company Limited",
-        "p1": "Established on October 14, 2020, to provide integrated logistics and transportation services, covering domestic and international transport, to meet the needs of industrial and corporate customers.",
-        "p2": "The company started with a registered capital of 1,000,000 Baht and changed its name to TNB Logistics Co., Ltd. on August 22, 2023, while increasing its registered capital to 5,000,000 Baht to support business expansion and continuous growth.",
-        "p3": "TNB focuses on developing modern, standardized, and safe transportation systems, providing services with a variety of transport vehicles and real-time tracking systems to build trust and deliver quality, timely, and sustainable services to customers."
+        "p1": "Established to operate<strong style=\"color: #0D2D6B;\">integrated logistics and transportation businesses</strong>, covering both domestic and international transportation, providing<strong style=\"color: #0D2D6B;\">supply chain solutions</strong> that meet the needs of customers in the industrial and business sectors.",
+        "p2": "The company has continuously expanded its service scope from cargo transportation to<strong style=\"color: #0D2D6B;\">comprehensive logistics management</strong>, from transportation planning and warehouse management to tracking and controlling transportation processes efficiently to serve diverse industrial needs.",
+        "p3": "Currently, <strong style=\"color: #0D2D6B;\">TNB Logistics Co., Ltd.</strong> operates with a clear direction, focusing on developing service capabilities and expanding capacity to meet the continuously growing needs of customers.",
+        "p4": "With a continuous development philosophy, <strong style=\"color: #0D2D6B;\">TNB</strong> focuses on applying<strong style=\"color: #0D2D6B;\">modern technology</strong> in service processes, whether<strong style=\"color: #0D2D6B;\">real-time job tracking systems</strong> and data management, to increase accuracy, speed, and safety in transportation, while delivering quality, timely services and building long-term customer confidence."
     },
     "expertise": {
         "title": "Our Expertise",

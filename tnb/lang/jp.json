@@ -186,7 +186,20 @@
         "10wheeltrailer_name": "10 Wheel Trailer",
         "10wheeltrailer_desc": "重量物に対応する10輪トレーラー、工業製品や大型原材料に最適。",
         "trailer_name": "Trailer Head",
-        "trailer_desc": "コンテナ輸送用トレーラーヘッド、20フィートと40フィートコンテナに対応し港湾と倉庫を接続。"
+        "trailer_desc": "コンテナ輸送用トレーラーヘッド、20フィートと40フィートコンテナに対応し港湾と倉庫を接続。",
+        "spec_load": "積載量:",
+        "spec_size": "コンテナサイズ:",
+        "spec_support": "対応:",
+        "pickup_load": "1 – 2 トン",
+        "pickup_size": "2.5 x 1.7 x 1.8 m",
+        "6wheel_load": "5 – 6 トン",
+        "6wheel_size": "6.0 x 2.3 x 2.3 m",
+        "6wheeltrailer_load": "10 – 12 トン",
+        "6wheeltrailer_size": "7.5 x 2.3 x 2.3 m",
+        "10wheeltrailer_load": "15 – 20 トン",
+        "10wheeltrailer_size": "9.5 x 2.4 x 2.5 m",
+        "trailer_load": "20 – 30 トン",
+        "trailer_support": "Container 20' / 40'"
     },
     "partners": {
         "title": "パートナーシップ",
@@ -194,7 +207,31 @@
         "desc_p2": "特に<strong class=\"partners-highlight\">自動車</strong>、<strong class=\"partners-highlight\">電子</strong>、<strong class=\"partners-highlight\">化学</strong>、<strong class=\"partners-highlight\">工業製品</strong>業界において、OEMおよび<strong class=\"partners-highlight\">Tier 1、Tier 2サプライヤー</strong>を含む",
         "desc_p3": "TNBは<strong class=\"partners-highlight\">品質</strong>、<strong class=\"partners-highlight\">安全性</strong>、<strong class=\"partners-highlight\">時間厳守</strong>を重視した基準で輸送サービスを提供し、お客様との密な働き関係の構築に備えています",
         "desc_p4": "持続可能な事業成長を支援し、<strong class=\"partners-highlight\">信頼できる物流パートナー</strong>として長期的な関係を構築するため"
-            },
+    },
+    "company": {
+        "title": "会社概要",
+        "subtitle": "TNBロジスティクス株式会社",
+        "p1": "<strong style=\"color: #0D2D6B;\">統合ロジスティクスおよび輸送事業</strong>を運営するために設立され、国内および国際輸送を網羅し、産業およびビジネスセクターの顧客のニーズを満たす<strong style=\"color: #0D2D6B;\">サプライチェーンソリューション</strong>を提供しています。",
+        "p2": "会社は貨物輸送から<strong style=\"color: #0D2D6B;\">統合ロジスティクス管理</strong>へとサービス範囲を継続的に拡大してきました。輸送計画、倉庫管理から、効率的な輸送プロセスの追跡と制御まで、多様な産業ニーズに対応しています。",
+        "p3": "現在、<strong style=\"color: #0D2D6B;\">TNBロジスティクス株式会社</strong>は明確な方向性を持って事業を運営しており、サービス能力の開発と、継続的に成長する顧客ニーズに対応するための能力拡大に注力しています。",
+        "p4": "継続的な開発哲学のもと、<strong style=\"color: #0D2D6B;\">TNB</strong>はサービスプロセスに<strong style=\"color: #0D2D6B;\">最新技術</strong>を適用することに注力しています。<strong style=\"color: #0D2D6B;\">リアルタイムジョブ追跡システム</strong>やデータ管理など、輸送の正確性、速度、安全性を向上させ、質の高くタイムリーなサービスを提供し、顧客との長期的な信頼関係を構築します。"
+    },
+    "expertise": {
+        "title": "私たちの専門知識",
+        "subtitle": "専門性 (Our Expertise)",
+        "desc_strong": "\"TNBはプロ意識を持って輸送およびロジスティクスサービスを提供することに尽力しています。\"",
+        "desc_p": "経験、技術、および企業顧客のニーズへの理解を結集することにより、業務のすべてのステップをカバーします。",
+        "item1_title": "01",
+        "item1_desc": "総合的な貨物輸送とロジスティクスの専門知識",
+        "item2_title": "02",
+        "item2_desc": "効率的なフリートとコンテナの管理",
+        "item3_title": "03",
+        "item3_desc": "最新の輸送技術システム",
+        "item4_title": "04",
+        "item4_desc": "産業および企業顧客の経験",
+        "item5_title": "05",
+        "item5_desc": "安全性と運用基準"
+    },
     "quotation": {
         "title": "見積もりのご依頼",
         "firstName": "名（名前）",
@@ -231,18 +268,7 @@
         "reference": "参考資料（参考ファイルの添付）",
         "fileHint": "最大ファイルサイズ：128 MB。",
         "comments": "その他のコメント（チームにお知らせしたいこと）",
-        "submitBtn": "見積もりリクエストを送信"
-    },
-    "company": {
-        "title": "会社概要",
-        "subtitle": "TNBロジスティクス株式会社",
-        "p1": "2020年10月14日に設立され、産業および企業顧客のニーズを満たすために、国内および国際輸送を含む統合ロジスティクスおよび輸送サービスを提供しています。",
-        "p2": "資本金1,000,000バーツで設立され、2023年8月22日にTNBロジスティクス株式会社に社名を変更するとともに、事業拡大と継続的な成長を支援するために資本金を5,000,000バーツに増資しました。",
-        "p3": "TNBは、近代的で標準化された安全な輸送システムの開発に注力し、さまざまな輸送車両とリアルタイムの追跡システムによるサービスを提供して、信頼を構築し、高品質でタイムリーかつ持続可能なサービスを顧客に提供します。"
-    },
-    "expertise": {
-        "title": "私たちの専門知識",
-        "subtitle": "専門性 (Our Expertise)",
+        "submitBtn": "見積もりリクエストを送信",
         "desc_strong": "\"TNBはプロ意識を持って輸送およびロジスティクスサービスを提供することに尽力しています。\"",
         "desc_p": "経験、技術、および企業顧客のニーズへの理解を結集することにより、業務のすべてのステップをカバーします。",
         "item1_title": "01",

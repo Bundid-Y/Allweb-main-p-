@@ -82,9 +82,9 @@
     let _currentData = {};
 
     // ── Fetch + cache a language file with multi-path fallback ───────────────
-    async function _loadLang(lang) {
-        console.log('[tnbLang] Loading language file:', lang);
-        if (_cache[lang]) {
+    async function _loadLang(lang, forceReload = false) {
+        console.log('[tnbLang] Loading language file:', lang, 'forceReload:', forceReload);
+        if (_cache[lang] && !forceReload) {
             console.log('[tnbLang] Language file cached:', lang);
             return _cache[lang];
         }
@@ -96,7 +96,7 @@
         }
 
         try {
-            // Try multiple paths automatically
+            // Try multiple paths automatically with cache busting
             const result = await tryMultiplePaths(lang);
             
             if (result.success && result.data) {
@@ -135,9 +135,16 @@
 
     // ── Apply translations to all [data-i18n] elements in the DOM ───────────
     function _applyTranslations(data, fallbackData) {
-        // data-i18n → textContent
+        // data-i18n → textContent (uses innerHTML to support HTML tags)
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
+            const text = _resolve(key, data) ?? _resolve(key, fallbackData) ?? null;
+            if (text !== null) _safeSetText(el, text);
+        });
+
+        // data-i18n-html → innerHTML (for content with HTML tags)
+        document.querySelectorAll('[data-i18n-html]').forEach(el => {
+            const key = el.getAttribute('data-i18n-html');
             const text = _resolve(key, data) ?? _resolve(key, fallbackData) ?? null;
             if (text !== null) _safeSetText(el, text);
         });
@@ -200,14 +207,14 @@
             lang = DEFAULT_LANG;
         }
 
-        // Load chosen language
-        let data = await _loadLang(lang);
+        // Force reload to get latest translations (clear cache)
+        let data = await _loadLang(lang, true);
 
         // If load failed, use fallback
         let fallbackData = _currentData;
         if (!data) {
             console.warn('[tnbLang] Falling back to', FALLBACK_LANG);
-            data = await _loadLang(FALLBACK_LANG);
+            data = await _loadLang(FALLBACK_LANG, true);
             if (!data) {
                 console.error('[tnbLang] Critical: could not load any language file.');
                 return;
@@ -217,7 +224,7 @@
 
         // Pre-load fallback for missing key resolution (only if needed)
         if (lang !== FALLBACK_LANG && !_cache[FALLBACK_LANG]) {
-            _loadLang(FALLBACK_LANG); // async, no await — preload in background
+            _loadLang(FALLBACK_LANG, true); // async, no await — preload in background
         }
         fallbackData = _cache[FALLBACK_LANG] || {};
 
