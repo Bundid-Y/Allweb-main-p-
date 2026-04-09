@@ -94,10 +94,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeof gsap !== 'undefined') {
         gsap.registerPlugin(ScrollTrigger);
         
-        const lenis = new Lenis();
-        lenis.on('scroll', ScrollTrigger.update);
-        gsap.ticker.add((time) => { lenis.raf(time * 1000); });
-        gsap.ticker.lagSmoothing(0);
+        // Disable Lenis on mobile/tablet to prevent layout overflow issues
+        if (window.innerWidth > 1024 && typeof Lenis !== 'undefined') {
+            const lenis = new Lenis();
+            lenis.on('scroll', ScrollTrigger.update);
+            gsap.ticker.add((time) => { lenis.raf(time * 1000); });
+            gsap.ticker.lagSmoothing(0);
+        }
 
         if (document.querySelector('.image-motion')) {
             gsap.set('.image-motion', { transform: 'rotatex(90deg)' });
@@ -490,7 +493,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ===== Mobile Dropdown Toggle ===== */
     dropdownItems.forEach(item => {
         const link = item.querySelector('.nav-link');
-        if (link) {
+        if (link && !item.classList.contains('tnb-lang-switcher')) {
             link.addEventListener('click', (e) => {
                 if (window.innerWidth > 1024) return;
                 e.preventDefault();

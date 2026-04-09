@@ -32,7 +32,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sarabun:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- Custom CSS & JS -->
-    <link rel="stylesheet" href="../css/style.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="../css/style.css?v=1.0.0">
     
     <!-- Load i18n first, then other scripts -->
     <script src="../js/i18n.js"></script>
@@ -171,3 +171,4 @@
 </body>
 
 </html>
+

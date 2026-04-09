@@ -1,5 +1,9 @@
 /* TNB Style CSS */
 
+html {
+  overflow-x: hidden;
+}
+
 /* =========================================
 
 
@@ -28,6 +32,8 @@ body {
   font-family: "Sarabun", sans-serif;
 
   overflow-x: hidden;
+
+  max-width: 100vw;
 
   background-color: #ffffff;
 }
@@ -63,7 +69,7 @@ body {
 
   justify-content: center;
 
-  padding: 5vh 5%;
+  padding: 50px 5%;
 
   box-sizing: border-box;
 
@@ -1364,7 +1370,7 @@ body {
 section.loop-images-quotation {
   position: relative;
 
-  height: 60vh;
+  height: 600px;
 
   width: 100%;
 
@@ -6768,13 +6774,13 @@ a {
 
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 
-    padding: 5rem 1.5rem 2rem;
+    padding: 4rem 1rem 2rem;
 
     border-radius: 0 0 15px 15px;
 
     transition: all 0.4s ease-in-out;
 
-    z-index: -1;
+    z-index: 1000;
 
     text-align: left;
 
@@ -6799,6 +6805,8 @@ a {
     opacity: 1;
 
     visibility: visible;
+
+    pointer-events: auto;
   }
 
   .header .nav-list {
@@ -6960,7 +6968,21 @@ a {
   /* เธเธธเนเธกเธเธดเธ”เน€เธกเธเธน (โ•) เธเธเธกเธทเธญเธ–เธทเธญ */
 
   .nav-close {
-    display: none !important;
+    display: block !important;
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 20px;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+
+    color: var(--text-color, #333);
+
+    z-index: 1001;
   }
 }
 
@@ -7076,6 +7098,10 @@ html {
 
   .header .tnb-lang-menu .dropdown-link {
     justify-content: flex-start !important;
+  }
+
+  #tnbLangToggle {
+    pointer-events: auto !important;
   }
 }
 
