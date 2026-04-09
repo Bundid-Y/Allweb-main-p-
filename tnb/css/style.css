@@ -9466,48 +9466,148 @@ body.page-trucktypes .truck-card__body {
   .page-branches .contact-item {
     max-width: 100% !important;
     width: 100% !important;
-    padding: 20px !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .page-branches .contact-section {
-    padding: 30px 10px 50px;
-    overflow-x: hidden;
-  }
-
-  .page-branches .contact-section .container {
-    max-width: 100% !important;
-    padding: 0 10px !important;
-  }
-
-  .page-branches .contact-section .container .contact-info-row {
+    padding: 18px 16px !important;
+    display: flex !important;
     flex-direction: column;
-    align-items: stretch;
-    gap: 15px;
-    max-width: 100% !important;
-  }
-
-  .page-branches .contact-item {
-    max-width: 100%;
-    width: 100%;
-    padding: 15px 12px;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
   }
 
   .page-branches .contact-icon {
-    margin: 0 auto 12px auto;
+    margin: 0 auto 14px auto !important;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .page-branches .contact-icon svg {
+    width: 22px;
+    height: 22px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .page-branches .contact-text-group {
+    text-align: center !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .page-branches .contact-text-group h4 {
     font-size: 16px;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #0d2d6b;
+    line-height: 1.2;
+    text-align: center !important;
+    width: 100%;
   }
 
   .page-branches .contact-text-group p {
     font-size: 14px;
     line-height: 1.4;
+    color: #475569;
+    margin: 0;
+    text-align: center !important;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-branches .contact-section {
+    padding: 20px 5px 40px;
+    overflow-x: hidden;
+  }
+
+  .page-branches .contact-section .container {
+    max-width: 100% !important;
+    padding: 0 5px !important;
+    width: 100% !important;
+  }
+
+  .page-branches .contact-section .container .contact-info-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .page-branches .contact-item {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 16px 12px !important;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 !important;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+  }
+
+  .page-branches .contact-icon {
+    margin: 0 auto 12px auto !important;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .page-branches .contact-icon svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .page-branches .contact-text-group {
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page-branches .contact-text-group h4 {
+    font-size: 15px;
+    margin-bottom: 8px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-weight: 600;
+    color: #0d2d6b;
+    line-height: 1.2;
+    text-align: center !important;
+    width: 100%;
+  }
+
+  .page-branches .contact-text-group p {
+    font-size: 13px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 0;
+    color: #475569;
+    text-align: center !important;
+    width: 100%;
   }
 }
 
