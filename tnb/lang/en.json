@@ -40,7 +40,7 @@
     "index": {
         "about_title": "About Us",
         "about_p1": "TNB Logistics is a comprehensive logistics and transportation service provider, offering domestic transportation, container transport, and warehouse-to-warehouse shuttle services. The company has offices and branches in strategic locations such as Bang Saen, Laem Chabang, Bang Kadi, and Lat Krabang to efficiently support the needs of industrial clients.",
-        "about_p2": "TNB focuses on service standards, safety, and punctuality in every transportation process, while adopting transportation management technologies to increase transparency and operational efficiency. The company is ready to be a trusted logistics partner, growing together with clients sustainably.",
+        "about_p2": "TNB focuses on service standards, safety, and punctuality in every transportation process while adopting transportation management technologies to increase transparency and operational efficiency. The company is ready to be a trusted logistics partner, growing together with clients sustainably.",
         "services_title": "Our Services",
         "services_sub": "Comprehensive transportation and logistics services that meet every business need with modern systems.",
         "svc1_sub": "Domestic Transportation",
@@ -62,7 +62,7 @@
         "svc6_excerpt": "Providing safe truck parking spaces equipped with full facilities and support.",
         "svc6_more": "Read More ›",
         "partners_title": "Our Trusted Partners",
-        "partners_sub": "The trust of leading companies is a testament to our professional service quality and standards",
+        "partners_sub": "The trust of leading companies is a testament to our professional service quality and standards.",
         "products_title": "Truck Types",
         "products_sub": "Various types of trucks to meet all your transportation and logistics needs."
     },
@@ -249,10 +249,10 @@
     "company": {
         "title": "Company History",
         "subtitle": "TNB Logistics Company Limited",
-        "p1": "Established to operate<strong style=\"color: #0D2D6B;\">integrated logistics and transportation businesses</strong>, covering both domestic and international transportation, providing<strong style=\"color: #0D2D6B;\">supply chain solutions</strong> that meet the needs of customers in the industrial and business sectors.",
-        "p2": "The company has continuously expanded its service scope from cargo transportation to<strong style=\"color: #0D2D6B;\">comprehensive logistics management</strong>, from transportation planning and warehouse management to tracking and controlling transportation processes efficiently to serve diverse industrial needs.",
+        "p1": "Established to operate<strong style=\"color: #0D2D6B;\"> integrated logistics and transportation businesses</strong>, covering both domestic and international transportation, providing<strong style=\"color: #0D2D6B;\"> supply chain solutions</strong> that meet the needs of customers in the industrial and business sectors.",
+        "p2": "The company has continuously expanded its service scope from cargo transportation to<strong style=\"color: #0D2D6B;\"> comprehensive logistics management</strong>, from transportation planning and warehouse management to tracking and controlling transportation processes efficiently to serve diverse industrial needs.",
         "p3": "Currently, <strong style=\"color: #0D2D6B;\">TNB Logistics Co., Ltd.</strong> operates with a clear direction, focusing on developing service capabilities and expanding capacity to meet the continuously growing needs of customers.",
-        "p4": "With a continuous development philosophy, <strong style=\"color: #0D2D6B;\">TNB</strong> focuses on applying<strong style=\"color: #0D2D6B;\">modern technology</strong> in service processes, whether<strong style=\"color: #0D2D6B;\">real-time job tracking systems</strong> and data management, to increase accuracy, speed, and safety in transportation, while delivering quality, timely services and building long-term customer confidence."
+        "p4": "With a continuous development philosophy, <strong style=\"color: #0D2D6B;\">TNB</strong> focuses on applying<strong style=\"color: #0D2D6B;\"> modern technology</strong> in service processes, whether<strong style=\"color: #0D2D6B;\"> real-time job tracking systems</strong> and data management, to increase accuracy, speed, and safety in transportation, while delivering quality, timely services and building long-term customer confidence."
     },
     "expertise": {
         "title": "Our Expertise",
@@ -333,7 +333,7 @@
         "card_route": "Covering All Industrial Routes Nationwide",
         "domestic_title": "Domestic Transportation",
         "domestic_subtitle": "Comprehensive Domestic Transport Services Designed for Business Needs",
-        "domestic_desc": "Providing comprehensive domestic freight transportation services covering warehouse-to-warehouse (WH to WH) transport and delivery to destinations nationwide. Supports both industrial and general cargo with a variety of truck types. Route planning is systematically carried out to increase speed and reduce transit time, operated by a team with experience and expertise in logistics.",
+        "domestic_desc": "Providing comprehensive domestic freight transportation services covering warehouse-to-warehouse (WH to WH) transport and delivery to destinations nationwide. Supports both industrial and general cargo with various truck types. Route planning is systematically carried out to increase speed and reduce transit time, operated by a team with experience and expertise in logistics.",
         "domestic_sec1_title": "Inbound Logistics",
         "domestic_sec1_desc": "Services to receive goods from suppliers or factories and transport them to distribution centers or warehouses with a systematic pickup schedule. Ensures that the inbound logistics process runs smoothly, on time, and at maximum efficiency.",
         "domestic_sec2_title": "Distribution Center \/ Warehouse",
@@ -389,7 +389,7 @@
         "container_card5": "Comprehensive Container Management",
         "nationwide_title": "Nationwide Distribution Service",
         "nationwide_subtitle": "Connecting Delivery at Every Step Across the Country",
-        "nationwide_desc": "Providing comprehensive distribution services covering all transportation stages from origin to destination. Supports all delivery steps including First Mile, Middle Mile, and Last Mile Delivery. Connects warehouses, distribution centers, and destination points efficiently with systematic route planning and delivery scheduling.",
+        "nationwide_desc": "Providing comprehensive distribution services covering all transportation stages from origin to destination. Supports all delivery steps, including first mile, middle mile, and last mile delivery. Connects warehouses, distribution centers, and destination points efficiently with systematic route planning and delivery scheduling.",
         "nationwide_sec1_title": "First Mile Delivery",
         "nationwide_sec1_desc": "Receiving goods from the origin and delivering them to a warehouse or distribution center with systematic operations, enabling smooth flow of goods in the supply chain.",
         "nationwide_sec2_title": "Middle Mile Distribution",
