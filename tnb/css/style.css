@@ -4299,6 +4299,21 @@ body:has(.login-page-wrapper) {
   border-radius: 0;
 }
 
+/* Responsive for Partners Page - Mobile & Tablet: Larger logos */
+@media (max-width: 768px) {
+  .partners-page-wrapper .login-track .login-item {
+    width: 14rem !important;
+    height: 14rem !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .partners-page-wrapper .login-track .login-item {
+    width: 12rem !important;
+    height: 12rem !important;
+  }
+}
+
 /* =========================================
 
 
