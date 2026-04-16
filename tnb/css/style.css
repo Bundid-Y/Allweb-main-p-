@@ -2822,7 +2822,7 @@ section.loop-images-quotation.vertical {
     justify-content: center !important;
   }
 
-  .contact-item {
+  body:not(.page-contact) .contact-item {
     min-width: 0 !important;
 
     max-width: none !important;
@@ -9354,33 +9354,61 @@ body.page-trucktypes .truck-card__body {
   box-shadow: 0 15px 40px rgba(13, 45, 107, 0.15);
 }
 
-/* iPad Pro and iPad Air - force vertical layout like iPad Mini */
+/* iPad Air & iPad Pro (768px-1024px) — การ์ดติดต่ออยู่ตรงกลาง */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .page-contact .contact-info-row {
+  .page-contact .contact-section {
+    display: flex !important;
+    justify-content: center !important;
+    padding: 60px 20px 80px !important;
+  }
+
+  .page-contact .contact-section > .container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
+  }
+
+  .page-contact .contact-info-row {
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
     gap: 15px !important;
     margin-bottom: 40px !important;
-    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
   }
 
   .page-contact .contact-item {
-    max-width: 100% !important;
-    width: 100% !important;
-    padding: 20px !important;
-    box-sizing: border-box !important;
+    flex: 0 0 auto !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .page-contact .contact-icon {
+    margin-right: 0 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .page-contact .contact-text-group {
+    text-align: center !important;
   }
 
   .page-contact .contact-text-group h4 {
     font-size: 18px !important;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    text-align: center !important;
   }
 
   .page-contact .contact-text-group p {
     font-size: 16px !important;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    text-align: center !important;
   }
 }
 
@@ -9535,25 +9563,34 @@ body.page-trucktypes .truck-card__body {
   }
 
   .page-branches .contact-section .container {
-    max-width: 600px !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 20px !important;
+    box-sizing: border-box !important;
   }
 
   .page-branches .contact-section .container .contact-info-row {
     flex-direction: column !important;
+    flex-wrap: nowrap !important;
     align-items: center !important;
+    justify-content: flex-start !important;
     gap: 15px !important;
-    max-width: 600px !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
   .page-branches .contact-item {
-    max-width: 100% !important;
+    max-width: 480px !important;
     width: 100% !important;
     padding: 18px 16px !important;
     display: flex !important;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
   }
 
   .page-branches .contact-icon {
